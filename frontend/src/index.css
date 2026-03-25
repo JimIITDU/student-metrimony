@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --green: #1a6b3c;
+  --green-light: #22883e;
+  --green-dark: #134d2b;
+  --gold: #c8972a;
+  --cream: #faf7f2;
+  --text: #1a1a1a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Noto Serif Bengali', serif;
+}
