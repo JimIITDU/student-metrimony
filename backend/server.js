@@ -20,10 +20,13 @@ connectDB()
 
 // Middleware
 app.use(helmet())
+// NEW - copy this
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production'
-    ? 'https://yourdomain.com'
-    : ['http://localhost:3000', 'http://localhost:5173'],
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'https://student-metrimony.vercel.app',
+  ],
   credentials: true,
 }))
 app.use(morgan('dev'))
