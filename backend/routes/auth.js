@@ -10,6 +10,7 @@ const router = express.Router()
 const otpLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 5,
+  trustProxy: true,
   message: { message: 'অনেক বেশি OTP অনুরোধ করা হয়েছে। ১৫ মিনিট পরে চেষ্টা করুন।' },
 })
 
